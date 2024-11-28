@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpideyNote_WPF", "SpideyNote_WPF\SpideyNote_WPF.csproj", "{1CE79F70-40EC-441D-B103-BB6647C81812}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpideyNote_DAL", "SpideyNote_DAL\SpideyNote_DAL.csproj", "{90D6291D-AF6F-4EBB-A532-D96003E20356}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpideyNote_BLL", "SpideyNote_BLL\SpideyNote_BLL.csproj", "{BEF1DCFC-4206-42A0-80A2-D6E60D210842}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpideyNote_DTO", "SpideyNote_DTO\SpideyNote_DTO.csproj", "{B53E423B-E90F-4802-A57C-157DB04CEFD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CE79F70-40EC-441D-B103-BB6647C81812}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CE79F70-40EC-441D-B103-BB6647C81812}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CE79F70-40EC-441D-B103-BB6647C81812}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CE79F70-40EC-441D-B103-BB6647C81812}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90D6291D-AF6F-4EBB-A532-D96003E20356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90D6291D-AF6F-4EBB-A532-D96003E20356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90D6291D-AF6F-4EBB-A532-D96003E20356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90D6291D-AF6F-4EBB-A532-D96003E20356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEF1DCFC-4206-42A0-80A2-D6E60D210842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF1DCFC-4206-42A0-80A2-D6E60D210842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF1DCFC-4206-42A0-80A2-D6E60D210842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF1DCFC-4206-42A0-80A2-D6E60D210842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B53E423B-E90F-4802-A57C-157DB04CEFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B53E423B-E90F-4802-A57C-157DB04CEFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B53E423B-E90F-4802-A57C-157DB04CEFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B53E423B-E90F-4802-A57C-157DB04CEFD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
