@@ -29,6 +29,11 @@ public class UserDAO
         return _userCollection.Find(u => u.Username == username).FirstOrDefault();
     }
     
+    public User FindUserById(string id)
+    {
+        return _userCollection.Find(u => u.Id == id).FirstOrDefault();
+    }
+    
     public User FindUserByEmail(string email)
     {
         return _userCollection.Find(u => u.Email == email).FirstOrDefault();
@@ -37,5 +42,15 @@ public class UserDAO
     public void InsertUser(User user)
     {
         _userCollection.InsertOne(user);
+    }
+    
+    public void InsertNotebookIdToUser(string userId, string notebookId)
+    {
+        _userCollection.UpdateOne(u => u.Id == userId, Builders<User>.Update.Push(u => u.Notebooks, notebookId));
+    }
+
+    public void InsertNoteIdToUser(string userId, string noteId)
+    {
+        _userCollection.UpdateOne(u => u.Id == userId, Builders<User>.Update.Push(u => u.Notes, noteId));
     }
 }

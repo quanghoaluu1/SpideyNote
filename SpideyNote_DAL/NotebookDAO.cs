@@ -5,7 +5,7 @@ namespace SpideyNote_DAL;
 
 public class NotebookDAO
 {
-    private MongoDbContext _dbContext;
+    private readonly MongoDbContext _dbContext;
     private IMongoCollection<Notebook> _notebookCollection;
     
     public NotebookDAO()
@@ -32,5 +32,17 @@ public class NotebookDAO
     public void InsertNotebook(Notebook notebook)
     {
         _notebookCollection.InsertOne(notebook);
+    }
+    
+    public void InsertNoteIdToNotebook(string notebookId, string noteId)
+    {
+        _notebookCollection.UpdateOne(n => n.Id == notebookId, Builders<Notebook>.Update.Push(n => n.Notes, noteId));
+    }
+    
+    public void UpdateNotebookTitle(string notebookId, string title)
+    {
+        var filter = Builders<Notebook>.Filter.Eq(n => n.Id, notebookId);
+        var update = Builders<Notebook>.Update.Set(n => n.Title, title);
+        _notebookCollection.UpdateOne(filter, update);
     }
 }

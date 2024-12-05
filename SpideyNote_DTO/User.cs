@@ -13,6 +13,7 @@ public class User
     [BsonElement("email")] public string Email { get; set; }
     [BsonElement("passwordHash")] public string PasswordHash { get; set; }
     [BsonElement("notebooks")] public List<string> Notebooks { get; set; }
+    [BsonElement("notes")] public List<string> Notes { get; set; }
     [BsonElement("createdAt")] public DateTime CreatedAt { get; set; }
     [BsonElement("updatedAt")] public DateTime UpdatedAt { get; set; }
 }

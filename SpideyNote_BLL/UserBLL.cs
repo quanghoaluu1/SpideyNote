@@ -37,4 +37,14 @@ public class UserBLL
         string hashedPassword = user.PasswordHash;
         return BCrypt.Net.BCrypt.Verify(password, hashedPassword);
     }
+    
+    public User FindUserByUsername(string username)
+    {
+        return UserDAO.Instance.FindUserByUsername(username);
+    }
+    
+    public User FindUserById(string id)
+    {
+        return UserDAO.Instance.FindUserById(id);
+    }
 }

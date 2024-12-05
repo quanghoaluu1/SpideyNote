@@ -12,7 +12,11 @@ public class Notebook
     [BsonElement("title")] public string Title { get; set; }
     [BsonElement("description")] public string Description { get; set; }
     [BsonElement("userId")] public string UserId { get; set; }
+    
+    [BsonElement("notebookParent")] public string NotebookParentId { get; set; }
     [BsonElement("notes")] public List<string> Notes { get; set; }
     [BsonElement("createdAt")] public DateTime CreatedAt { get; set; }
     [BsonElement("updatedAt")] public DateTime UpdatedAt { get; set; }
+
+    public bool IsNotebook = true;
 }

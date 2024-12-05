@@ -1,0 +1,19 @@
+﻿<Page x:Class="SpideyNote.NotePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SpideyNote"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800" Background="White"
+      Title="NotePage">
+
+    <Grid>
+        <TextBox Name="TextBoxTitle" BorderBrush="Transparent" Text="Title" HorizontalAlignment="Left" FontSize="20" Margin="43,10,0,0" VerticalAlignment="Top" Height="auto" Width="auto"/>
+        <RichTextBox Name="RichTextBoxContent" VerticalScrollBarVisibility="Auto" BorderBrush="Transparent" AcceptsReturn="True" FontSize="15" Height="auto" Margin="10,87,10,0"  Width="auto"/>
+        <TextBlock Name="TextBlockUpdateDate"  HorizontalAlignment="Left" Margin="628,10,0,0" FontSize="20" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Last Update:" HorizontalAlignment="Left" Margin="506,6,0,0" FontSize="20" VerticalAlignment="Top"/>
+        <Button Name="ButtonSave" Content="Save" HorizontalAlignment="Left" Margin="687,50,0,0" VerticalAlignment="Top" Click="ButtonSave_Click"/>
+
+    </Grid>
+</Page>

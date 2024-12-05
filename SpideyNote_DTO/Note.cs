@@ -16,4 +16,5 @@ public class Note
     [BsonElement("tags")] public List<string> Tags { get; set; }
     [BsonElement("createdAt")] public DateTime CreatedAt { get; set; }
     [BsonElement("updatedAt")] public DateTime UpdatedAt { get; set; }
+    public bool IsNotebook = false;
 }
